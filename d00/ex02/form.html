@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>Identity card bitch.</title>
 		<meta charset="UTF-8">
-		<script>
-			
-		</script>
+		<script src="popup.js"></script>
 	</head>
+	<body>
+		<div class="background">
+			<h1>Identity card bitch</h1>
+			<form class="identity">
+				Firstname: <input type="text" id="firstname"  ><br>
+				Name: <input type="text" id="name" ><br>
+				Age: <input type="number" id="age"><br>
+				Phone: <input type="text" id="phone"><br>
+				Email: <input type="email" id="email"><br>
+				Student at 42 ? 
+				<input type="checkbox" id="student" value="yes" checked><br>
+				<input type="radio" name="gender" id="gender_male" value="male" checked> Male
+				<input type="radio" name="gender" id="gender_female" value="female"> Female
+				<input type="radio" name="gender" id="gender_monkey" value="other"> Monkey<br>
+				<input type="submit" value="Run that sexy Javascript!" onclick="displayFormContents();">
+			</form>
+		</div>
+	</body>
 </html>
